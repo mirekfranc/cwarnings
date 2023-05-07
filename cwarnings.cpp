@@ -97,7 +97,7 @@ int main (int argc, char *argv[])
                     context_line = how_many_lines_of_context;
                     skip_this_line = false;
                 }
-                else if (*r != '-' && (*r < 'A' || *r > 'Z') && (*r < 'a' || *r > 'z'))
+                else if (*r != '-' && (*r < 'A' || *r > 'Z') && (*r < 'a' || *r > 'z') && *r != '+')
                     break;
             }
 
